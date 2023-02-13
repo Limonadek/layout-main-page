@@ -3,11 +3,10 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="index.css" rel="stylesheet" />
     </head>
     <body>
-        <header class='header'>
-            <img src="*" alt="логотип" class="header--logo" />
+        <header id="header" class='header'>
+            <img src="./image/logo.png" alt="логотип" class="header--logo" />
             <ul class="header--menu">
                 <li class="menu--item">Главная</li>
                 <li class="menu--item">О Вас</li>
@@ -18,10 +17,42 @@
         </header> 
         <main class='main'></main>
         <footer class='footer'>
-            <div class="footer-logo-container">
-                <img class="footer-logo-container--icon" src="" alt="логотип">
-                <img class="footer-logo-container--text" src="" alt="текст">
-            </div>
+            <img class="footer-logo" src="./image/footer-logo.svg" alt="логотип"/>
+            <ul class="footer-navigation">
+                <li class="footer-navigation--heading">Навигация</li>
+                <li class="footer-navigation--item">Главная</li>
+                <li class="footer-navigation--item">О Вас</li>
+                <li class="footer-navigation--item">Услуги</li>
+                <li class="footer-navigation--item">Карта сайта</li>
+                <li class="footer-navigation--item">Контакты</li>
+            </ul>
+            <ul class="footer-requisites">
+                <li class="footer-requisites--heading">Реквизиты</li>
+                <li class="footer-requisites--title">Инн:</li>
+                <li class="footer-requisites--text">525624553474</li>
+                <li class="footer-requisites--title">Огрнип:</li>
+                <li class="footer-requisites--text">312525616000033</li>
+            </ul>
+            <section class="footer-share">
+                <span class="footer-share-heading">Мы в соц. сетях</span>
+                <div class="footer-share-icons-container">
+                    <a href="" class="footer-share-icons-container--link">
+                        <img src="#" alt="" class="footer-share-icons-container--icon">
+                    </a>
+                    <a href="" class="footer-icons-share-container--link">
+                        <img src="#" alt="" class="footer-icons-share-container--icon">
+                    </a>
+                    <a href="" class="footer-icons-share-container--link">
+                        <img src="#" alt="" class="footer-icons-share-container--icon">
+                    </a>
+                    <a href="" class="footer-icons-share-container--link">
+                        <img src="#" alt="" class="footer-icons-share-container--icon">
+                    </a>
+                </div>
+                <div class="footer-share--text1">Политика конфиленциальности</div>
+                <div class="footer-share--text2">© 2012-2020 Sovetnik</div>
+            </section>
+            <nav class="footer-navigation-up"><a href="#header"><img src="#" alt="стрелка вверх" /></a></nav>
         </footer>
    </body>
 </html>
