@@ -3,18 +3,20 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     </head>
-    <body>
-
+    <body class="page">
         <header id="header" class="header">
-            <img src="./image/logo.png" alt="логотип" class="header--logo" />
+            <a href="" class="header__link"><img src="./image/logo.png" alt="логотип" class="header__logo"/></a>
             <nav class="navigation  header__navigation">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#header" class="navigation__link">Главная</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link">О Вас</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link">Услуги</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link">Карта сайта</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
+                    <a href="#header" class="navigation__link"><li class="navigation__item">Главная</li></a>
+                    <a href="" class="navigation__link"><li class="navigation__item">О Вас</li></a>
+                    <a href="" class="navigation__link"><li class="navigation__item">Услуги</li></a>
+                    <a href="" class="navigation__link"><li class="navigation__item">Карта сайта</li></a>
+                    <a href="" class="navigation__link"><li class="navigation__item">Контакты</li></a>
                 </ul>    
             </nav>
         </header> 
@@ -175,60 +177,66 @@
         </main>
 
         <footer class='footer'>
-            <img class="footer__logo" src="./image/footer-logo.svg" alt="логотип"/>
-            <nav class="navigation  footer__navigation">
-                <ul>
-                    <li class="navigation__item"><a href="#header" class="navigation__link">Главная</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link">О Вас</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link">Услуги</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link">Карта сайта</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
-                </ul>    
-            </nav>
+            <div class="footer-container">
+                <img class="footer__logo" src="./image/footer-logo.svg" alt="логотип"/>
 
-            <div class="footer-requisites">
-                <span class="footer-requisites__title">Реквизиты</span>
-                <ul class="footer-requisites__list">
-                    <li class="footer-requisites__item">
-                        <li class="footer-requisites__name">Инн:</li>
-                        <li class="footer-requisites__value">525624553474</li>
-                    </li>
-                    <li class="footer-requisites__item">
-                        <li class="footer-requisites__name">Огрнип:</li>
-                        <li class="footer-requisites__value">312525616000033</li>
-                    </li>
-                </ul>
+                <div class="footer-navigation">
+                    <span class="footer-navigation__text">Навигация</span>
+                    <nav class="navigation">
+                        <ul class="navigation__list navigation-list--footer">
+                            <a href="#header" class="navigation__link "><li class="navigation__item navigation__item--footer">Главная</li></a>
+                            <a href="" class="navigation__link"><li class="navigation__item navigation__item--footer">О Вас</li></a>
+                            <a href="" class="navigation__link"><li class="navigation__item navigation__item--footer">Услуги</li></a>
+                            <a href="" class="navigation__link"><li class="navigation__item navigation__item--footer">Карта сайта</li></a>
+                            <a href="" class="navigation__link"><li class="navigation__item navigation__item--footer">Контакты</li></a>
+                        </ul>    
+                    </nav>
+                </div>
+
+                <div class="footer-requisites">
+                    <span class="footer-requisites__title">Реквизиты</span>
+                    <ul class="footer-requisites__list">
+                        <li class="footer-requisites__item">
+                            <span class="footer-requisites__name">Инн:</span>
+                            <span class="footer-requisites__value">525624553474</span>
+                        </li>
+                        <li class="footer-requisites__item">
+                            <span class="footer-requisites__name">Огрнип:</span>
+                            <span class="footer-requisites__value">312525616000033</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <section class="footer__socials socials">
+                    <span class="socials__title">Мы в соц. сетях</span>
+                    <ul class="socials__list">
+                        <li class="socials__item">
+                            <a href="" class="socials__link">
+                                <img src="./image/instagram.svg" alt="инстаграм" class="socials__icon">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="" class="socials__link">
+                                <img src="./image/vk.svg" alt="вк" class="socials__icon">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="" class="socials__link">
+                                <img src="./image/youtobe.svg" alt="ютуб" class="socials__icon">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="" class="socials__link">
+                                <img src="./image/facebook.svg" alt="фейсбук" class="socials__icon">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__confident">Политика конфиленциальности</div>
+                    <div class="footer__copyright">© 2012-2020 Sovetnik</div>
+                </section>
             </div>
-
-            <section class="footer__socials socials">
-                <span class="socials__title">Мы в соц. сетях</span>
-                <ul class="socials__list">
-                    <li class="socials__item">
-                        <a href="" class="socials__link">
-                            <img src="#" alt="инстаграм" class="socials__icon">
-                        </a>
-                    </li>
-                    <li class="socials__item">
-                        <a href="" class="socials__link">
-                            <img src="#" alt="вк" class="socials__icon">
-                        </a>
-                    </li>
-                    <li class="socials__item">
-                        <a href="" class="socials__link">
-                            <img src="#" alt="ютуб" class="socials__icon">
-                        </a>
-                    </li>
-                    <li class="socials__item">
-                        <a href="" class="socials__link">
-                            <img src="#" alt="фейсбук" class="socials__icon">
-                        </a>
-                    </li>
-                </ul>
-            </section>
-
-            <div class="footer__confident">Политика конфиленциальности</div>
-            <div class="footer__copyright">© 2012-2020 Sovetnik</div>
         </footer>
-        <a href="#header"><img src="#" alt="стрелка вверх"/></a>
+        <!-- <a href="#header"><img src="#" alt="стрелка вверх"/></a> -->
    </body>
 </html>
