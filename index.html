@@ -176,7 +176,9 @@
 
                     <div class="main-content main-content--size-feedback author">
                         <div class="author__container">
-                            <img src="./image/author-icon.png" alt="автор отзыва" class="author__icon">
+                            <div class="author-image__container">
+                                <img src="./image/author-icon.png" alt="автор отзыва" class="author__icon">  
+                            </div>   
                             <span class="author__nickname">“Convert Monster”</span>
                         </div>
                         <div class="author__description-container">
@@ -185,6 +187,17 @@
                         </div>
                     </div>
                 </section>
+                <ul class="page-list">
+                    <button class="controll controll--left">
+                        <img src="./image/arrow-prew.png" alt="кнопка влево" class="controll__icon"/>
+                    </button>
+                    <a href="#" class="page-list__link"><li class="page-list__item page-list__item--active">1</li></a>
+                    <a href="#" class="page-list__link"><li class="page-list__item">2</li></a>
+                    <a href="#" class="page-list__link"><li class="page-list__item">3</li></a>
+                    <button class="controll controll--right">
+                        <img src="./image/arrow-next.png" alt="кнопка вправо" class="controll__icon"/>
+                    </button>
+                </ul>
             </div>
         </main>
 
@@ -196,7 +209,7 @@
                     <span class="footer-navigation__text">Навигация</span>
                     <nav class="navigation">
                         <ul class="navigation__list navigation-list--footer">
-                            <a href="#header" class="navigation__link "><li class="navigation__item navigation__item--footer">Главная</li></a>
+                            <a href="#header" class="navigation__link"><li class="navigation__item navigation__item--footer">Главная</li></a>
                             <a href="" class="navigation__link"><li class="navigation__item navigation__item--footer">О Вас</li></a>
                             <a href="" class="navigation__link"><li class="navigation__item navigation__item--footer">Услуги</li></a>
                             <a href="" class="navigation__link"><li class="navigation__item navigation__item--footer">Карта сайта</li></a>
@@ -247,8 +260,13 @@
                     <div class="footer__confident">Политика конфиленциальности</div>
                     <div class="footer__copyright">© 2012-2020 Sovetnik</div>
                 </section>
+
+                <div class="footer-button__container">
+                    <a href="#header">
+                        <img src="./image/Union.png" alt="стрелка вверх"/>
+                    </a>
+                </div>
             </div>
         </footer>
-        <!-- <a href="#header"><img src="#" alt="стрелка вверх"/></a> -->
    </body>
 </html>
