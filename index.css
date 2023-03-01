@@ -4,6 +4,7 @@
     --color-header-border-bottom: #F5F0FF;
     --color-text-primary: #3B1788;
     --color-main-background: #f9f7fa;
+    --color-header-border-bottom: transparent;
     --color-header-hover-border-bottom: #3B1788;
     --color-main-search-title: #1D0B44;
     --color-main-search-text: #032E47;
@@ -89,13 +90,14 @@
     cursor: pointer;
     width: 127px;
     height: 70px;
+    border-bottom: 2px solid var(--color-header-border-bottom);
 }
 
 .navigation__item:hover {
     width: 127px;
     height: 69px;
     background-color: var(--color-header-hover);
-    border-bottom: 2px solid var(--color-header-hover-border-bottom);
+    border-bottom-color: var(--color-header-hover-border-bottom);
 }
 
 .navigation__link {
