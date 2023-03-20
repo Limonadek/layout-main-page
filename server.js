@@ -26,6 +26,14 @@ app.get('/post', async (req, res) => {
     }
 });
 
+app.get('/services', async(req, res) => {
+    try {
+        res.sendFile(path.join(__dirname + '/src/services.html'));
+    } catch(error) {
+        res.status(500).end();
+    }
+})
+
 app.listen(port, function () {
 	console.log(`Server listening port ${port}`);
 });

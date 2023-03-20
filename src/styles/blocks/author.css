@@ -1,0 +1,48 @@
+.author {
+    color: var(--color-text-secondary)
+}
+
+.author__name {
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.author__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.5px;
+}
+
+.author__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px
+}
+
+.author-image__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 5px solid var(--color-feedback-background);
+    filter: drop-shadow(0px 0px 22px rgba(243, 233, 254, 1));
+}
+
+.author__nickname {
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 15px;
+}
+
+.author__description-container {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}

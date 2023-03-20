@@ -9,10 +9,35 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     </head>
     <body class="page">
-        <header id="header" class="header">
-            <div class="wrap wrap--header">
+        <header id="header" class="header header--dekstop">
+            <div class="wrap wrap--header wrap-header--main">
                 <a href="" class="header__link"><img src="./image/logo.png" alt="логотип" class="header__logo"/></a>
                 <nav class="navigation  header__navigation">
+                    <ul class="navigation__list">
+                        <a href="#header" class="navigation__link"><li class="navigation__item">Главная</li></a>
+                        <a href="" class="navigation__link"><li class="navigation__item">О Вас</li></a>
+                        <a href="http://localhost:3002/services" class="navigation__link"><li class="navigation__item">Услуги</li></a>
+                        <a href="" class="navigation__link"><li class="navigation__item">Карта сайта</li></a>
+                        <a href="" class="navigation__link"><li class="navigation__item">Контакты</li></a>
+                    </ul>    
+                </nav>
+            </div>
+        </header>
+
+        <header id="header" class="header header--post header--mobile wrap-margin--up">
+            <div class="wrap wrap--header--post">
+                <div class="wrap wrap--header">
+                    <section class="main-heading">
+                        <img src="../image/main-heading-logo.svg" alt="логотип" class="main-heading__logo">
+                        <span class="main-heading__text">для руководителей, которые поставили амбициозные цели</span>
+                    </section>
+                </div>
+                
+                <nav class="navigation  header__navigation navigation--post">
+                    <button class="menu">
+                        <img src="../image/menu-icon.png" alt="иконка меню" class="menu__icon">
+                        <span class="menu__text">Меню</span>
+                    </button>
                     <ul class="navigation__list">
                         <a href="#header" class="navigation__link"><li class="navigation__item">Главная</li></a>
                         <a href="" class="navigation__link"><li class="navigation__item">О Вас</li></a>
@@ -27,7 +52,7 @@
         <main class='main'>
             <div class="wrap wrap-main">
 
-                <section class="main-heading">
+                <section class="main-heading header--dekstop">
                     <img src="./image/main-heading-logo.svg" alt="логотип" class="main-heading__logo">
                     <span class="main-heading__text">для руководителей, которые поставили амбициозные цели</span>
                 </section>
@@ -47,7 +72,7 @@
                     <div class="main-content content-size-l">
                         <span class="main-content__author">Дмитрий Новосёлов</span>
                         <div class="main-content__container">
-                            <h1 class="main-content__heading">Как писать SEO- тексты — ТОП 7 правил</h1>
+                            <a class="links" href="http://localhost:3002/post"><h1 class="main-content__heading">Как писать SEO- тексты — ТОП 7 правил</h1></a>
                             <h2 class="main-content__desctiption">Уже давно не было такого, чтобы я написал какой-то SEO текст, а он не вышел в ТОП Яндекса.</h2>
                             <ul class="main-content__social social">
                                 <li class="social__item">
@@ -175,7 +200,7 @@
                         </div>
                     </div>
 
-                    <div class="main-content main-content--size-feedback author">
+                    <div class="content-size-feedback main-content author">
                         <div class="author__container">
                             <div class="author-image__container">
                                 <img src="./image/author-icon.png" alt="автор отзыва" class="author__icon">  

@@ -1,0 +1,107 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-footer-background);
+    min-height: 256px;
+    width: 100%;
+    border-top: 1px solid var(--color-footer-border-top);
+}
+
+.footer__logo {
+    width: 274px;
+    height: 149px;
+}
+
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-navigation__text {
+    color: var(--color-text-secondary);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.62px;
+    margin-bottom: 15px;
+}
+
+.footer-requisites {
+    width: 120px;
+    height: 195px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 17px;
+}
+
+.footer-requisites__title {
+    color: var(--color-text-secondary);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.62px;
+    margin-bottom: 10px;
+}
+
+.footer-requisites__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: var(--color-text-secondary);
+    gap: 13px
+}
+
+.footer-requisites__name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.5px;
+}
+
+.footer-requisites__value {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.5px;
+}
+
+.footer__socials {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+}
+
+.footer__confident {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--color-text-primary);
+}
+
+.footer__copyright {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--color-text-primary);
+}
+
+.footer-button__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--color-feedback-background);
+    box-shadow: 0px 7px 20px rgba(29, 11, 68, 0.06);
+    width: 63px;
+    height: 63px;
+}
+
+.footer-button__container:hover {
+    background-color: var(--color-footer-button__container);
+}
