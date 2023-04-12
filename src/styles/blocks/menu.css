@@ -1,0 +1,18 @@
+.menu {
+    border: none;
+    background-color: var(--color-footer-backgraund);
+    cursor: pointer;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    height: 70px;
+}
+
+.menu__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16.2px;
+    color: var(--color-header-hover-border-bottom);
+}

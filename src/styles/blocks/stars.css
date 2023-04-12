@@ -1,0 +1,49 @@
+.stars {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 11px;
+    width: 100%;
+    height: 163px;
+    margin-top: 44px;
+    margin-bottom: 35px;
+    border-top: 1px solid var(--color-line-post);
+    border-bottom: 1px solid var(--color-line-post);
+}
+
+.stars__heading {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-text-secondary);
+}
+
+.stars-list {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+}
+
+.stars-list__push {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-main-background);
+}
+
+.start-list__item {
+    width: 44px;
+    height: 44px;
+    background: url(../../image/Star.png) no-repeat;
+}
+
+.stars__part {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-text-secondary);
+}

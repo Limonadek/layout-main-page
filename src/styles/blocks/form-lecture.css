@@ -1,0 +1,73 @@
+.form-lecture {
+    background-image: url(../../image/main-form-lecture-image.png);
+    color: var(--color-text-content);
+}
+
+.form-lecture__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26.25px;
+    margin: 0;
+    filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.37));
+}
+
+.form-lecture__heading--upper-case {
+    font-size: 47px;
+    line-height: 39px;
+}
+
+.form-lecture__desctiption {
+    padding-top: 8px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.37));
+}
+
+.form-lecture__input-email {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-text-secondary);
+    width: 215px;
+    height: 43px;
+    text-align: center;
+    border: 1px solid var(--color-input-email);
+    border-radius: 55px;
+    filter: drop-shadow(0px 4px 9px rgba(33, 0, 67, 0.1));
+}
+
+.form-lecture__input-email::-webkit-input-placeholder {
+    color: var(--color-input-email);
+}
+
+.form-lecture__input-email:focus {
+    outline: none;
+    margin-bottom: 3px;
+    filter: drop-shadow(0px 9px 40px rgba(33, 0, 67, 0.2));
+}
+
+.form-lecture__submit {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    color: var(--color-text-content);
+    width: 221px;
+    height: 47px;
+    border: 1px solid var(--color-button-email-backgraund);
+    border-radius: 55px;
+    background-color: var(--color-button-email-backgraund);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17.5px;
+}
+
+.form-lecture__submit:hover {
+    margin-top: -3px;
+    margin-bottom: 3px;
+}
+
+.form-lecture--container {
+    align-items: center;
+}

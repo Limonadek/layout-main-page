@@ -3,19 +3,46 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/styles/index.css" type="text/css" rel="stylesheet"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <script defer src="./modalMenu.js"></script>
     </head>
     <body class="page">
-        <header id="header" class="header">
-            <div class="wrap wrap--header">
+        <header id="header--dekstop" class="header header--dekstop">
+            <div class="wrap wrap--header wrap-header--main">
                 <a href="" class="header__link"><img src="./image/logo.png" alt="логотип" class="header__logo"/></a>
                 <nav class="navigation  header__navigation">
                     <ul class="navigation__list">
-                        <a href="#header" class="navigation__link"><li class="navigation__item">Главная</li></a>
+                        <a href="http://localhost:3002/" class="navigation__link"><li class="navigation__item">Главная</li></a>
                         <a href="" class="navigation__link"><li class="navigation__item">О Вас</li></a>
-                        <a href="" class="navigation__link"><li class="navigation__item">Услуги</li></a>
+                        <a href="http://localhost:3002/services" class="navigation__link"><li class="navigation__item">Услуги</li></a>
+                        <a href="" class="navigation__link"><li class="navigation__item">Карта сайта</li></a>
+                        <a href="" class="navigation__link"><li class="navigation__item">Контакты</li></a>
+                    </ul>    
+                </nav>
+            </div>
+        </header>
+
+        <header id="header" class="header header--post header--mobile wrap-margin--up">
+            <div class="wrap wrap--header--post">
+                <div class="wrap wrap--header">
+                    <section class="main-heading">
+                        <img src="../image/main-heading-logo.svg" alt="логотип" class="main-heading__logo">
+                        <span class="main-heading__text">для руководителей, которые поставили амбициозные цели</span>
+                    </section>
+                </div>
+                
+                <nav class="navigation  header__navigation navigation--post">
+                    <button class="menu">
+                        <img src="../image/menu-icon.png" alt="иконка меню" class="menu__icon">
+                        <span class="menu__text">Меню</span>
+                    </button>
+                    <ul class="navigation__list">
+                        <a href="http://localhost:3002/" class="navigation__link"><li class="navigation__item">Главная</li></a>
+                        <a href="" class="navigation__link"><li class="navigation__item">О Вас</li></a>
+                        <a href="http://localhost:3002/services" class="navigation__link"><li class="navigation__item">Услуги</li></a>
                         <a href="" class="navigation__link"><li class="navigation__item">Карта сайта</li></a>
                         <a href="" class="navigation__link"><li class="navigation__item">Контакты</li></a>
                     </ul>    
@@ -26,27 +53,29 @@
         <main class='main'>
             <div class="wrap wrap-main">
 
-                <section class="main-heading">
+                <section class="main-heading header--dekstop">
                     <img src="./image/main-heading-logo.svg" alt="логотип" class="main-heading__logo">
                     <span class="main-heading__text">для руководителей, которые поставили амбициозные цели</span>
                 </section>
 
                 <section class="main-search">
-                    <div class="main-search__description">
-                        <h1 class="main-search__title">Получить консультацию</h1>
-                        <h3 class="main-search__text">Опишите ситуацию или задайте вопрос, который Вас интересует</h3>
+                    <div class="container-search">
+                        <div class="main-search__description">
+                            <h1 class="main-search__title">Получить консультацию</h1>
+                            <h3 class="main-search__text">Опишите ситуацию или задайте вопрос, который Вас интересует</h3>
+                        </div>
+                        <form method="get" class="main-search__form form-about">
+                            <input type="text" required class="form-about__input" placeholder="Что Вы хотели бы узнать?">
+                            <button class="form-about__button"><img class="form-about__image" alt="->" src="./image/Right.svg" /></button>
+                        </form>
                     </div>
-                    <form method="get" class="main-search__form form-about">
-                        <input type="text" required class="form-about__input" placeholder="Что Вы хотели бы узнать?">
-                        <button class="form-about__button"><img class="form-about__image" alt="->" src="./image/Right.svg" /></button>
-                    </form>
                 </section>
 
                 <section class="main-contents">
                     <div class="main-content content-size-l">
                         <span class="main-content__author">Дмитрий Новосёлов</span>
                         <div class="main-content__container">
-                            <h1 class="main-content__heading">Как писать SEO- тексты — ТОП 7 правил</h1>
+                            <a class="links" href="http://localhost:3002/post"><h1 class="main-content__heading">Как писать SEO- тексты — ТОП 7 правил</h1></a>
                             <h2 class="main-content__desctiption">Уже давно не было такого, чтобы я написал какой-то SEO текст, а он не вышел в ТОП Яндекса.</h2>
                             <ul class="main-content__social social">
                                 <li class="social__item">
@@ -174,7 +203,7 @@
                         </div>
                     </div>
 
-                    <div class="main-content main-content--size-feedback author">
+                    <div class="content-size-feedback main-content author">
                         <div class="author__container">
                             <div class="author-image__container">
                                 <img src="./image/author-icon.png" alt="автор отзыва" class="author__icon">  
@@ -209,9 +238,9 @@
                     <span class="footer-navigation__text">Навигация</span>
                     <nav class="navigation">
                         <ul class="navigation__list navigation-list--footer">
-                            <a href="#header" class="navigation__link"><li class="navigation__item navigation__item--footer">Главная</li></a>
+                            <a href="http://localhost:3002/" class="navigation__link"><li class="navigation__item navigation__item--footer">Главная</li></a>
                             <a href="" class="navigation__link"><li class="navigation__item navigation__item--footer">О Вас</li></a>
-                            <a href="" class="navigation__link"><li class="navigation__item navigation__item--footer">Услуги</li></a>
+                            <a href="http://localhost:3002/services" class="navigation__link"><li class="navigation__item navigation__item--footer">Услуги</li></a>
                             <a href="" class="navigation__link"><li class="navigation__item navigation__item--footer">Карта сайта</li></a>
                             <a href="" class="navigation__link"><li class="navigation__item navigation__item--footer">Контакты</li></a>
                         </ul>    

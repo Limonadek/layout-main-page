@@ -1,0 +1,9 @@
+.controll {
+    background-color: var(--color-main-background);
+    border: none;
+    padding: 0;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    cursor: pointer;
+}
