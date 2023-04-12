@@ -7,6 +7,7 @@
 }
 
 .services-content__heading {
+    margin-top: 0px;
     font-weight: 700;
     font-size: 32px;
     line-height: 40px;
@@ -38,6 +39,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    max-height: 295px;
     padding: 28px 40px 42px 40px;
 }
 
@@ -69,15 +71,15 @@
 }
 
 .services-list-container__link {
+    width: 210px;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: var(--color-services-link);
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    padding: 13px 42px 13px 42px;
-    gap: 21px;
+    justify-content: space-around;
+    padding: 13px 14px 13px 17px;
     border-radius: 5px;
     border: 1px solid var(--color-form-comment-push-border);
     background-color: var(--color-form-comment-push-background);

@@ -34,9 +34,10 @@
 }
 
 .author__nickname {
-   font-weight: 600;
-   font-size: 12px;
-   line-height: 15px;
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
 }
 
 .author__description-container {

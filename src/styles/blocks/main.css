@@ -24,6 +24,7 @@
 }
 
 .main-heading__text {
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: var(--color-header-background);
     text-transform: uppercase;
@@ -36,11 +37,7 @@
     margin-top: 40px;
     border-radius: 5px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     width: 100%;
-    padding: 41px 0 42px 0;
-    gap: 45px;
     font-family: 'Montserrat', sans-serif;
     background-image: url(../../image/main-search-image.png);
     background-size: cover;
@@ -69,6 +66,8 @@
 }
 
 .main-search__form {
+    width: 100%;
+    max-width: 433px;
     display: flex;
     flex-direction: row;
     align-items: center;
